@@ -40,8 +40,8 @@ end
 
 CreateThread(function()
 	while true do
-	Wait(10)
-	local players = lib.callback.await('zombie_blips:updateBlips', 500)
+	Wait(1)
+	local players = lib.callback.await('zombie_blips:updateBlips', 100)
 		if (players) ~= nil then
 			for _, data in pairs(players) do
 				if not data then 
