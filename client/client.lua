@@ -33,8 +33,8 @@ local function createAllPlayerBlips(playerId, playerLabel, playerLocation)
 			EndTextCommandSetBlipName(blip)
 			collectedBlips[#collectedBlips + 1] = blip
 		end
-		if GetBlipFromEntity(PlayerPedId()) == blip then
-		-- RemoveBlip(blip) -- Ensure we remove our own blip.
+		if GetBlipFromEntity(PlayerPedId()) == blip and config.removeOwnMarker then
+			RemoveBlip(blip) -- Ensure we remove our own blip.
 	end
 end
 
