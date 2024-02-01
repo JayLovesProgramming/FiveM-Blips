@@ -1,5 +1,6 @@
 return {
   drawNameTags = true,
+  removeOwnMarker = false,
   commandToShowMarkerColours = "getmarkercolours",
   commandToSetMarkerColour = "setmarkercolour",
   commandToToggleIfYouShouldSeeYourOwnMarker = "toggleownmarker",
